@@ -1,0 +1,7 @@
+<div>
+    <input ng-model="outerController.progress" type="text">
+    <button ng-click="outerController.updateProgress()">Click to update</button>
+    <br/><br/>
+    <div>The next is from ng repeat</div>
+    <shape-details ng-repeat="info in outerController.data" title="info.title" description="info.description" status="info.status" ng-click="outerController.clickElement(info.title)"></shape-details>
+</div>
